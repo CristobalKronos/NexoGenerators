@@ -1,5 +1,4 @@
 # Generador de estrellas
-import random
 
 '''
 # Reglas de generación de estrellas
@@ -18,7 +17,6 @@ import random
     # Ternaria
 '''
 import random
-
 from seeds import seeds
 
 def SelectColor():

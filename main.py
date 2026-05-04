@@ -1,4 +1,4 @@
-from generatores import sistema
+from generatores import newStarSystem
 import random
 
 print("Inicializando generador")
