@@ -23,22 +23,42 @@ def verificar():
     print("Hex no registrado, procediendo a generar uno...")
     generateHex(1,2,3)
 
+def generateSolarSystem():
+    rngSS = random.randrange(100)
+
+    # Primero se define la estrella, identificando el número, color y tamaño.
+    # Segundo se identifica el número de circulos planetarios y la zona habitable.
+    # Tercero se identifica el contenido de cada circulo planetario
+
+    if rngSS <= 100:
+        print("")
+
+def generateNebulosa():
+    print("")
+
+def generateCementerioEstelar():
+    print("")
+
+def generateAnomalía():
+    print("")
+
 def generateHex(codX, codY, codZ):    
     # Segundo, en caso de no haber un Hex creado, se genera uno nuevo.
 
     rng1 = random.randrange(100)
     print (rng1)
     
-    if rng1 <= 40:
-        print("Vacío")
-    elif rng1 <= 70:
-        print("Sistema solar")
-    elif rng1 <= 85:
-        print("Nube de materia / Nebulosa")
+    if rng1 <= 60:
+        print("En las coordenadas" + codX + codY + codZ + "Se encuentra: " + "Vacío")
+    elif rng1 <= 80:
+        print("En las coordenadas" + codX + codY + codZ + "Se encuentra: " + "Sistema solar")
+        generateSolarSystem()
+    elif rng1 <= 90:
+        print("En las coordenadas" + codX + codY + codZ + "Se encuentra: " + "Nube de materia / Nebulosa")
     elif rng1 <= 95:
-        print("Cementerio estelar")
+        print("En las coordenadas" + codX + codY + codZ + "Se encuentra: " + "Cementerio estelar")
     else:
-        print("Anomalía")
+        print("En las coordenadas" + codX + codY + codZ + "Se encuentra: " + "Anomalía")
     
     # Tercero, se guarda el Hex en la base de datos.
         
