@@ -17,3 +17,20 @@ Generador de armas
 Generador de naves espaciales
 Generador de vehículos
 -->
+
+<!--
+Generador de armas
+
+Armas cuerpo a cuerpo
+- Espadas
+- Hachas
+- Martillos
+
+Armas de rango
+- Arcos
+
+Escudos
+
+Granadas
+
+-->
